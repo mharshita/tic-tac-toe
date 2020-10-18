@@ -106,16 +106,16 @@ const changeItem = itemNumber => {
             <h1 className="text-success text-center text-uppercase">
               {winMessage}
             </h1>
-            <Button color="success" block onClick={reloadGame}> Reload the Game</Button>
+            <Button color="success" block onClick={reloadGame}> Reload The Game</Button>
           </div>
         ) : (
-          <h1 className="text-center text-warning">
-            {isCross ? "Cross" : "Circle" } turns
+          <h1 className="text-center text-warning heading">
+            {isCross ? "Cross" : "Circle" } Turns
           </h1>
         )}
            <div className="grid">
               {itemArray.map((item, index) => (
-                <Card color="warning" onClick={ () => changeItem(index) }>
+                <Card className="card" onClick={ () => changeItem(index) }>
                   <CardBody className="box">
                     <Icon name={item} />
                   </CardBody>
