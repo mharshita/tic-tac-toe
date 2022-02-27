@@ -1,6 +1,8 @@
 body {
   background: #75d2d2 !important;
   overflow-x: hidden !important;
+  text-align: center !important;
+  justify-content: center !important;
 }
 
 .grid {
@@ -19,6 +21,11 @@ body {
 .icon {
   font-size: 35px;
   font-weight: bold;
+  color: #212529;
+}
+
+.icon:hover {
+  text-decoration: none;
   color: #212529;
 }
 
